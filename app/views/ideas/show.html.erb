@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<div class="row">
+  <div class="col-sm-4">
+
+    <h4>登録内容</h4>
+    <div class="card card-default">
+      <div class="card-header">
+      </div>
+      <div class="card-body card-5-7">
+        <div class="card-left">
+          <p>
+            <strong>ヘッダー写真:</strong>
+            <%= image_tag(@idea.picture_url, width: 200) if @idea.picture.present? %>
+          </p>
+        </div>
+        <div class="card-right">
+          <p>
+            <strong>名前:</strong>
+            <%= @idea.name %>
+          </p>
+
+          <p>
+            <strong>詳細:</strong>
+            <%= @idea.description %>
+          </p>
+        </div>
+      </div>
+      <%= link_to 'Edit', edit_idea_path(@idea) %> |
+      <%= link_to 'Back', ideas_path %>
+    </div>
+  </div>
+</div>
