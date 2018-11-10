@@ -33,4 +33,4 @@ public/uploads
 
 /vendor/bundle
 
-.idea/workspace.xml
+.idea/*
